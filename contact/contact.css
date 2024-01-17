@@ -1,0 +1,139 @@
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+
+
+
+body{
+    display: flex;
+    
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    font-family: 'Press Start 2P', system-ui;
+    z-index: -1;
+    height: 2em;
+}
+
+
+#tittle-contact{
+    position: relative;
+    top: .4em;
+    font-size: 62px;
+    color: aqua;
+}
+
+
+#redes_sociais{
+    position: relative;
+    font-size: 40px;
+    top: 4em;
+}
+
+
+li + li{
+    padding-top: 55px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+
+@media only screen and (max-width: 1023px) {
+
+    #tittle-contact{
+        font-size: 40px;
+    }
+
+    #redes_sociais{
+        top: 5.5em;
+        font-size: 30px;
+    }
+
+    li + li{
+        padding-top: 50px;
+    } 
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 717px) {
+
+    #tittle-contact{
+        font-size: 38px;
+    }
+
+
+    #redes_sociais{
+        font-size: 25px;
+        top: 7em;
+    }
+
+    li + li{
+        padding-top: 45px;
+    }
+    
+
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 400px) {
+
+    #redes_sociais{
+        font-size: 20px;
+        top: 8.5em;
+        left: .5em;
+    }
+
+    #tittle-contact{
+        font-size: 30px;
+        left: .1em;
+    }
+
+
+    li + li{
+            padding-top: 35px;
+    }
+    
+    i{
+        padding-left: 10px;
+    }
+
+
+}

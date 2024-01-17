@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
+
+body{
+    background: linear-gradient(to right, #4c52a8, #5653b0, #6153b7, #6d52be, #7951c4);
+    display: block;
+}
+
+
+
+
+
+
+
+  section{
+    background: white;
+    border-radius: 50px;
+    position: relative;
+    padding: 100px;
+    width: 55em;
+    height: 31em;
+    top: 8em;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    font-family: 'Salsa', cursive;
+}
+
+
+
+
+.titulo2{
+    text-align: center;
+    margin: 0;
+    position: relative;
+    left: 1em;
+    top: -6.5em;
+}
+
+
+.select_custom {
+    position: relative;
+    width: 140px; 
+    top: -4.2em;
+    left: -4.4em;      
+  }
+
+.select_custom select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: url(/assets/img/arrow.png) no-repeat right center;
+    background-size: 20px;
+}
+
+ 
+
+
+.select_custom select:focus{
+    outline: none;
+    border-color: rgb(98, 0, 255);
+}
+
+
+:root{
+    --transitionDuration: 0.5s;
+}
+
+
+.input_texto{
+    position: relative;
+    width: 13.7em;
+    top: -6.5em;
+    left: 15em;
+    user-select: none;
+    caret-color: rgb(98, 0, 255);
+    z-index: 1;
+}
+
+.input_texto input{
+    outline: none;
+    border: 1px solid rgba(0,0,0,.25);
+    background-color: transparent;
+    color: #000;
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-size: 13px;
+    transition: var( --transitionDuration);
+}
+
+#nota_escrita{
+    padding: 10px 25px 10px 4px;
+    width: 16em;
+}
+   
+
+.input_texto span{
+    color: rgba(0,0,0,.25);
+    padding: 0 3px;
+    position: absolute;
+    background-color: #fff;
+    top: 1.3em;
+    left: 0.5em;
+    transform: translateY(-50%);
+    z-index: -1;
+    font-size: 13px;
+    transition: var(--transitionDuration); 
+}
+
+
+.input_texto input:focus,
+.input_texto input:valid{
+    border: 1px solid rgb(146, 99, 255);
+}
+
+.input_texto input:focus ~ span,
+.input_texto input:valid ~ span{
+    color:rgb(98, 0, 255);
+    border-right: 1px solid rgb(98, 0, 255);
+    border-left: 1px solid rgb(98, 0, 255);
+    font-size: 9px;
+    top: .2em;
+    z-index: 1;
+}
+
+
+
+
+
+
+#clean{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    border-radius: 5em;
+    box-sizing: border-box;
+    color: #1a1a1a4d;
+    cursor: pointer;
+    display: inline-block;
+    font-family: OCR A STd, monospace;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    top: 3.5em;
+    left: 26em;
+    width: 1.3em;
+    height: 1.3em;
+    z-index: 2;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, .32, 1);
+    user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+#clean:disabled{
+    pointer-events: none;
+}
+
+
+#clean:hover{
+    background-color: #1a1a1a18;
+    box-shadow: rgba(0,0,0,.25);
+    transform: translateY(-2px);
+}
+
+#clean:active{
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+.transportar{
+    appearance: button;
+    position: absolute;
+    top: 4.3em;
+    left: 46em;
+    background-color: #4c52a8;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 10px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 12px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+
+
+
+
+.transportar:after{
+    background-clip: padding-box;
+    background-color: #5a62c5;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+
+.transportar:main, .transportar:focus{
+    user-select: auto;
+}
+
+.transportar:hover:not(:disabled){
+    filter: brightness(1.1);
+}
+
+.transportar:disabled{
+    cursor: auto;
+}
+
+.transportar:active:after{
+    border-width: 0 0 0px;
+}
+
+.transportar:active{
+    padding-bottom: 10px;
+}
+
+
+#resultado{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 25.9em;
+    top: -2.3em;
+    left: -3em;
+    font-size: 34px;
+    overflow: hidden;
+    max-height: 9.5em;
+    text-overflow: ellipsis;
+}
+
+.observacao{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 10em;
+    font-size: 14px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1023px){
+
+    section{
+        width: 43em;
+        height: 27em;
+        left: 0em;
+        top: 6em;
+    }
+
+    .titulo2{
+        top:-6.4em;
+        left: 2em;
+    }
+
+
+    .select_custom{
+        width: 8em;
+        top:-4.2em;
+        left: -4em;
+    }
+
+    .input_texto{
+        left: 10.5em;
+        width: 12em;
+    }
+
+
+    #nota_escrita{
+        padding: 10px 23px 10px 4px;
+    }
+
+    .input_texto span{
+        font-size: 11px;
+    }
+
+    #clean{
+        width: 1.3em;
+        height: 1.2em;
+        top: 3.55em;
+        left: 22.5em;
+    }
+
+    .transportar{
+        top: 5.5em;
+        left: 48em;
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+
+    #resultado{
+        font-size: 28px;
+        max-height: 9.6em;
+        width: 24.9em;
+        top: -2.8em;
+        left: -3.6em;
+    }
+
+    .observacao{
+
+        top: 9em;
+        left: 0em;
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 717px){
+
+    section{
+        width: 31em;
+        height: 34em;
+        top: 47px;
+        left: 0em;
+    }
+
+    .titulo2{
+        left: 1em;
+    }
+
+    .select_custom{
+        width: 7em;
+        top: -3.5em;
+        left: -4.5em;
+    }
+
+    .select_custom select{
+        padding: 7px;
+    }
+
+    .input_texto{
+        top: -5.4em;
+        left: 7.5em;
+        width: 13em;
+    }
+
+    .transportar{
+        top: 47.5em;
+        left: 21em;
+        padding: 7px 8px;
+        font-size: 10px;
+    }
+
+    #clean{
+        left: 21.5em;
+        top: 4em;
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+#nota_escrita{
+    padding: 5px 26px 8px 4px;
+    width: 18em;
+}
+ 
+    #resultado{
+        top: -3.1em;
+        width: 20em;
+        left: -4.1em;
+        font-size: 25px;
+        max-height: 14.2em;
+    }
+
+    .observacao{
+        top: 1.5em;
+        left: 0em;
+        color: #000;
+    }
+    
+    
+    
+}
+
+
+
+@media only screen and (max-width: 520px){
+    
+    section{
+        width: 20em;
+        height: 31em;
+        top: 0em;
+    }
+
+    .titulo2{
+        left: -0.4em;
+    }
+
+    .select_custom{
+        width: 6em;
+        top: -3.5em;
+        left: -5.5em;
+    }
+
+    .select_custom select{
+        padding: 4px;
+        background-size: 15px;
+    }
+
+    .input_texto{
+        top: -5.2em;
+        width: 5em;
+        left: 5em;
+    }
+
+    .input_texto span{
+        font-size: 10px;
+    }
+
+    
+
+.input_texto input:focus ~ span,
+.input_texto input:valid ~ span{
+    font-size: 6px;
+    top: .1em;
+    
+}
+
+    #nota_escrita{
+        width: 10em;
+        padding: 3px 25px 6px 5px;
+    }
+
+    
+
+    #clean{
+        font-size: 15px;
+        top: 5.6em;
+        left: 19.3em;
+    }
+
+    .transportar{
+        font-size: 8px;
+        padding: 6px 10px;
+        top: 55em;
+        left: 16.2em;
+    }
+
+    #resultado{
+        font-size: 16px;
+        width: 19em;
+        max-height: 19em;
+        left: -5.7em;
+        top: -4em;
+    }
+
+    .observacao{
+        width: 30em;
+        top: -2.8em;
+        left: 0.5em;
+        font-size: 8px;
+        color: #000;
+    }
+
+}

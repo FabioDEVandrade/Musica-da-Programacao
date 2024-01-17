@@ -1,0 +1,130 @@
+.txt_animated{
+    margin: auto;
+    position: relative;
+    width: 34em;
+    left: -1.5em;
+    top: 10.5em;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+
+.txt_animated{
+    font-size: 33px;
+    font-weight: 300;
+    z-index: -1;
+}
+
+.txt_animated span{
+    left: 10px;
+    position: relative;
+}
+
+.txt_animated span::before{
+    content: "";
+    color: whitesmoke;
+    animation: palavras 15s infinite;
+}
+
+.txt_animated span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid whitesmoke;
+    right: -14px;
+    animation: cursor .8s infinite, digita 15s steps(15) infinite;
+    width: calc(100% + 17px);
+    background-color: #7951C4;
+}
+
+@keyframes digita{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 17px);
+    }
+
+}
+
+@keyframes cursor{
+    0%{
+        border-left: 2px solid rgb(0, 0, 0);
+    }
+}
+
+
+@keyframes palavras{
+    0%,25%{
+        content: "Transpor?";
+        color: #f244a5;
+    }
+    26%,40%{
+        content: "Escalas?";
+        color: #ff90c8;
+    }
+    41%,60%{
+        content: "Rudimentos?";
+        color: #708bff;
+    }
+    61%,80%{
+        content: "Notação?";
+        color: #ffb639;
+    }
+    81%,100%{
+        content: "Aqui nós temos!";
+        color: white;
+    }
+    
+
+}
+
+
+
+@media only screen and (max-width: 1250px) {
+
+
+    .txt_animated{
+        width: 19em;
+        left: -0.5em;
+        top: 8em;
+    }
+
+
+
+
+
+
+
+
+    
+}
+
+
+@media only screen and (max-width: 717px) {
+
+    .txt_animated{
+        font-size: 20px;
+    }
+
+    .txt_animated{
+        width: 20em;
+        left: 0em;
+        top: 12em;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+
+    .txt_animated{
+        font-size: 15px;
+        top: 16em;
+    }
+
+
+
+}

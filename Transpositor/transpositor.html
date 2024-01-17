@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="transpositor.css">
+    <title>Transpositor de Tonalidade</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../assets/img/Logo.png" alt="logo-site">
+        </a>
+
+        <div id="tittle">Música da Programação</div>
+
+        <button id="openMenu">&#9776;</button>
+
+        <nav id="menu">
+
+            <button id="closeMenu">X</button>
+
+            <a href="../index.html">HOME</a>
+            <a href="transpositor.html">FERRAMENTAS</a>
+            <a href="../contact/contact.html">CONTATOS</a>
+            <a href="../about/about.html">SOBRE</a>
+
+        </nav>
+
+    </header>
+
+    <section>
+        
+
+        <div class="titulo2">
+            <h1>Transposição</h1>
+        </div>
+        <div class="select_custom">
+            <select id="selOpções">
+                <option value="C/F">C/F</option>
+                <option value="F/C">F/C</option>
+                <option value="C/Bb">C/Bb</option>
+                <option value="Bb/C">Bb/C</option>
+                <option value="C/Eb">C/Eb</option>
+                <option value="Eb/C">Eb/C</option>
+                <option value="Bb/F">Bb/F</option>
+                <option value="F/Bb">F/Bb</option>
+                <option value="Eb/Bb">Eb/Bb</option>
+                <option value="Bb/Eb">Bb/Eb</option>
+                <option value="Eb/F">Eb/F</option>
+                <option value="F/Eb">F/Eb</option>
+            </select>
+        </div>
+
+
+
+        <div class="input_texto">
+            <input type="text" id="nota_escrita" required>
+            <span>Insira a Nota</span>
+        </div>
+
+
+       <div class="limpar">
+            <button id="clean" onclick="limpar()">X</button>
+        </div>
+
+         <div class="botão_transportar">
+            <button class="transportar" onclick="Transportar()">Transpor</button>
+        </div>
+
+        <div id="resultado">
+        </div>
+
+        
+   
+    </section>
+    
+    <div class="observacao">
+        *Obs: Notas em maiusculo, acidentes em minusculo. <br>
+        *Não deixar espaço depois da ultima nota.
+    </div>
+
+
+    
+
+    <script src="transpositor.js"></script>
+    <script type="text/javascript" src="../assets/js/responsive.js"></script>
+</body>
+</html>

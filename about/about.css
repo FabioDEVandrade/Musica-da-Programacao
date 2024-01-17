@@ -1,0 +1,115 @@
+
+
+body{
+    font-family: 'Press Start 2P', system-ui;
+    display: flex;
+    margin-left: 15px;
+    background: linear-gradient(to left, #4c52a8, #5653b0, #6153b7, #6d52be, #7951c4);
+}
+
+section{
+    position: relative;
+    color: #d5caca;
+    z-index: -1;
+}
+
+#tittle-about{
+    color: white;
+    font-size: 40px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: azure;
+    text-align: center;
+}
+
+p{
+    position: relative;
+    top: 2em;
+    font-size: 28px;
+}
+
+p + p{
+    padding-top: 70px;
+}
+
+@media only screen and (max-width: 1023px){
+
+    section{
+        top: 3em;
+    }
+
+    #tittle-about{
+        font-size: 45px;
+    }
+
+    p{
+        font-size: 22px;
+    }
+
+    p + p{
+        padding-top: 60px;
+    }
+
+
+}
+
+
+
+
+@media only screen and (max-width: 717px){
+    section{
+        top: 3em;
+    }
+
+    #tittle-about{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    p + p{
+        padding-top: 55px;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+    section{
+        top: 1em;
+    }
+    
+    #tittle-about{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    
+
+    p + p{
+        padding-top: 40px;
+    }
+
+    footer{
+        font-size: 15px;
+    }
+
+
+}
