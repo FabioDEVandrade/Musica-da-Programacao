@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 
 
@@ -24,7 +24,7 @@ body{
     top: 8em;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
-    font-family: 'Salsa', cursive;
+    font-family: 'Work Sans', sans-serif;
 }
 
 
@@ -480,7 +480,7 @@ body{
 
     #clean{
         font-size: 15px;
-        top: 5.6em;
+        top: 5.3em;
         left: 19.3em;
     }
 
